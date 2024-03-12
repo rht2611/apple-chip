@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple M2 Max Chip</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Nunito Sans", sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 5vmax;
+            background: rgb(2, 0, 36);
+
+        }
+
+        h2 {
+            font-size: 4vmax;
+        }
+
+        h3 {
+            font-size: 3vmax;
+        }
+
+        h4 {
+            font-size: 2vmax;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(197, 139, 230, 1) 0%, rgba(144, 5, 185, 1) 100%, rgba(0, 212, 255, 1) 100%, rgba(230, 135, 231, 1) 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p.black-heading {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .container {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            max-width: 95vw;
+            width: 100vw;
+            height: auto;
+            margin: auto;
+            padding: 20px;
+
+        }
+
+        .box {
+            background-color: #EFEFEF;
+            border-radius: 10px;
+            padding: 10px;
+            border: 1px solid #e6e3e3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .thunderbolt img {
+            width: 50%;
+            height: auto;
+        }
+
+        .memory {
+            grid-column: 5/7;
+        }
+
+        .purple-text {
+            font-size: 22px;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(197, 139, 230, 1) 0%, rgba(144, 5, 185, 1) 100%, rgba(0, 212, 255, 1) 100%, rgba(230, 135, 231, 1) 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .high-performancce h4 {
+            color: #000000;
+        }
+
+
+
+        .transistors {
+            grid-column: 1/3;
+        }
+
+        .neural-engine {
+            grid-column: 1/2;
+            grid-row: 3/4;
+
+        }
+
+        .fatser-neural-engine {
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+
+        .m2-max {
+
+            grid-column: 3/5;
+            grid-row: 2/4;
+        }
+
+        .high-performancce {
+            grid-column: 1/3;
+            grid-row: 4/5;
+        }
+
+        .technology {
+            grid-column: 3/5;
+            grid-row: 4/5;
+        }
+
+        .bandwidth {
+            grid-column: 5/7;
+            grid-row: 4/5;
+        }
+
+        .cpu-core {
+            grid-row: 2/4;
+        }
+
+        .gpu-core {
+            grid-row: 2/4;
+        }
+
+        .m2-max img {
+            width: 100%;
+            height: auto;
+            padding: 3vw;
+        }
+
+        .cpu-core img {
+            width: 90%;
+            height: auto;
+        }
+
+        .gpu-core img {
+            width: 50%;
+            height: auto;
+
+        }
+
+        /* responsive code for mobile */
+
+        @media only screen and (max-width:768px) {
+
+            .container {
+                grid-template-rows: repeat(10, 0.5fr);
+                padding: 10px;
+
+            }
+
+            .box.thunderbolt {
+                grid-column: 1/4;
+            }
+
+            .box.cpu {
+                grid-column: 4/7;
+                grid-row: 1 / 2;
+            }
+
+            .box.gpu {
+                grid-column: 1/4;
+                grid-row: 2/3;
+            }
+
+            .box.power {
+                grid-column: 4/7;
+                grid-row: 2/3;
+            }
+
+            .box.memory {
+                grid-column: 1 / -1;
+                grid-row: 3 / 4;
+            }
+
+            .box.transistors {
+                grid-column: 1 / -1;
+                grid-row: 4 / 5;
+            }
+
+            .box.neural-engine {
+                grid-row: 5 / 6;
+                grid-column: 1 / 4;
+            }
+
+            .box.fatser-neural-engine {
+                grid-row: 5 / 6;
+                grid-column: 4 / 7;
+            }
+
+            .box.m2-max {
+                grid-row: 6 / 7;
+                grid-column: 1 / -1;
+            }
+
+            .box.cpu-core {
+                grid-row: 7 / 8;
+                grid-column: 1 / 4;
+
+            }
+
+            .box.gpu-core {
+                grid-row: 7 / 8;
+                grid-column: 4 / 7;
+            }
+
+            .box.high-performancce {
+                grid-row: 8 / 9;
+                grid-column: 1 / -1;
+            }
+
+            .box.technology {
+                grid-row: 9 / 10;
+                grid-column: 1 / -1;
+            }
+
+            .box.bandwidth {
+                grid-row: 10 / 11;
+                grid-column: 1 / -1;
+            }
+
+
+
+
+
+
+
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <div class="container">
+        <div class="box thunderbolt">
+            <img src="images/thunderbolt.png" alt="thunderbolt">
+            <p>Thunderbolt 4</p>
+        </div>
+        <div class="box cpu">
+            <p>Up to</p>
+            <h3>20%</h3>
+            <p>faster CPU</p>
+        </div>
+        <div class="box gpu">
+            <p>Up to</p>
+            <h3>30%</h3>
+            <p>faster GPU</p>
+        </div>
+        <div class="box power">
+            <p>Industry-leading
+                performance
+                per watt</p>
+        </div>
+        <div class="box memory">
+            <p>Up to</p>
+            <h1>96GB</h1>
+            <p>LPDDR5 memory</p>
+        </div>
+        <div class="box transistors">
+            <p class="purple-text">Over</p>
+            <h2>67 billion</h2>
+            <p class="purple-text">transistors</p>
+        </div>
+        <div class="box neural-engine">
+            <p>16-core</p>
+            <h3>Neural Engine</h3>
+            <p>15.8 trillion ops/s</p>
+        </div>
+        <div class="box fatser-neural-engine">
+            <p></p>
+            <h3>40%</h3>
+            <p>faster Neural Engine</p>
+        </div>
+        <div class="box m2-max">
+            <img src="images/chip.png" alt="chip">
+        </div>
+        <div class="box cpu-core">
+            <img src="images/cpu.png" alt="cpu">
+            <p></p>
+            <h4>12-core</h4>
+            <p>CPU</p>
+        </div>
+        <div class="box gpu-core">
+            <img src="images/gpu.jpeg" alt="gpu">
+            <p>Up to</p>
+            <h4>38-core</h4>
+            <p>GPU</p>
+        </div>
+        <div class="box high-performancce">
+            <p class="black-heading">High-performance
+                media engine with ProRes</p>
+        </div>
+        <div class="box technology">
+            <p>Second-generation</p>
+            <h3>5 nm technology</h3>
+        </div>
+        <div class="box bandwidth">
+            <h2>400GB/s</h2>
+            <p class="black-heading">Memory bandwidth</p>
+
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
